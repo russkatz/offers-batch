@@ -8,11 +8,14 @@
 2. Python with the Datastax Python drivers installed
 
 # How-to
-1. Edit contact point(s) in wallet-offers.py to point to your cluster.
-2. Run ./wallet-offers.py to create keyspace+tables and generate wallets.
+1. Edit contactpoints in wallet-offers.py to point to your cluster.
+2. Optional: Edit AuthProvider with username and password in wallet-offers.py
+3. Run ./wallet-offers.py to create keyspace+tables and generate wallets.
   * The longer it runs the more wallets it will create
-3. Login to DSE Anaytical node and run `dse spark`
-4. Paste wallet_new_offer.scala 
+4. Login to DSE Anaytical node and run `dse spark`
+5. Paste wallet_new_offer.scala 
+6. Eat a sandwich
+7. See new offers created in wallet_offers, one for each wallet.
 
 # Notes
 
