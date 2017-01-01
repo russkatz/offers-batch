@@ -26,8 +26,8 @@ session = cluster.connect()
 query1 = "CREATE KEYSPACE IF NOT EXISTS %s WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}  AND durable_writes = true;" % (keyspace)
 query2 = "CREATE TABLE IF NOT EXISTS %s.wallet_by_id ( id timeuuid, rev timeuuid, createdtime text, deleted boolean, email text, firstname text, hashedemail text, lastname text, loyalityid text, profileid text, updatedtime text, PRIMARY KEY (id, rev));" % (keyspace)
 query3 = "CREATE TABLE IF NOT EXISTS %s.wallet_offers ( ownedbywallet text, id text, createdtime text, deleted text, effectivebegindate text, effectiveenddate text, itemid text, otype text, promocode text, shareable text, supcused text, updatedtime text, PRIMARY KEY (ownedbywallet, id));" % (keyspace)
-query4 = "CREATE TABLE IF NOT EXISTS %s.wallet_newitems ( id text PRIMARY KEY, createdtime text, deleted boolean, effectivebegindate text, effectiveenddate text, itemid text, promocode text, shareable text, supcused text, type text, updatedtime text);" % (keyspace)
-query5 = "INSERT INTO %s.wallet_newitems (id , effectiveenddate, createdtime, deleted, effectivebegindate, itemid, promocode, shareable, supcused, type, updatedtime) VALUES ( '1','12/30/2017','12/25/2016', false, '12/31/2016', '1', 'NEW ITEM', 'no', 'something', 'coupon', '12/27/2016');" % (keyspace)
+query4 = "CREATE TABLE IF NOT EXISTS %s.wallet_newoffers ( id text PRIMARY KEY, createdtime text, deleted boolean, effectivebegindate text, effectiveenddate text, itemid text, promocode text, shareable text, supcused text, type text, updatedtime text);" % (keyspace)
+query5 = "INSERT INTO %s.wallet_newoffers (id , effectiveenddate, createdtime, deleted, effectivebegindate, itemid, promocode, shareable, supcused, type, updatedtime) VALUES ( '1','12/30/2017','12/25/2016', false, '12/31/2016', '1', 'NEW ITEM', 'no', 'something', 'coupon', '12/27/2016');" % (keyspace)
 
 print "Creating keyspace and tables"
 session.execute(query1)
