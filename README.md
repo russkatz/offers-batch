@@ -6,6 +6,6 @@
 # how-to
 1. Edit contact point(s) wallet-offers.py
 2. Run ./wallet-offers.py to create keyspace+tables and generate wallets.
-  *The longer it runs the more wallets it will create
+  * The longer it runs the more wallets it will create
 3. Login to DSE Anaytical node and run `dse spark`
 4. Paste wallet_new_offer.scala 
