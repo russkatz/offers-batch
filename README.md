@@ -13,7 +13,7 @@
 3. Run ./wallet-offers.py to create keyspace+tables and generate wallets.
   * The longer it runs the more wallets it will create
 4. Login to DSE Anaytical node and run `dse spark`
-5. Paste wallet_new_offer.scala 
+5. Paste wallet_new_offer.scala into the Spark prompt
 6. Eat a sandwich
 7. See new offers created in wallet_offers, one for each wallet.
 
