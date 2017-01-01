@@ -8,7 +8,7 @@
 2. Python with the Datastax Python drivers installed
 
 # How-to
-1. Edit contact point(s) wallet-offers.py
+1. Edit contact point(s) in wallet-offers.py to point to your cluster.
 2. Run ./wallet-offers.py to create keyspace+tables and generate wallets.
   * The longer it runs the more wallets it will create
 3. Login to DSE Anaytical node and run `dse spark`

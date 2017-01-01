@@ -5,10 +5,16 @@ import sys
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
-#Configuration
+## Configuration
 contactpoints = ['10.0.0.252']
-auth_provider = PlainTextAuthProvider (username='russ', password='DevryPOC')
+
+# This will be ignored if your cluster does not have authentication enabled
+auth_provider = PlainTextAuthProvider (username='username', password='Password123')
+
+# Will need to update wallet_new_offer.scala if you change this
 keyspace = "wallet"
+
+## End Configuration
 
 print "Connecting to cluster"
 
