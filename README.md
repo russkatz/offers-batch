@@ -21,4 +21,5 @@
 
 * I am sure this is NOT the best way to do this.
 * Feel free to tell me how I can optimize anything!
+* I suggest a turkey with provolone cheese on rye for step 6
 * I'd like to write all the new wallet_offers rows into a RDD/DF and THEN iterate through and saveToCassandra, instead of doing saveToCassandra in the for loop.. but I couldn't work out how :)
